@@ -14,7 +14,7 @@ buildscript {
             mavenContent { snapshotsOnly() }
         }
         maven {
-            url 'http://repo.spring.io/milestone'
+            url 'https://repo.spring.io/milestone'
         }
     }
     dependencies {
@@ -38,7 +38,7 @@ repositories {
         mavenContent { snapshotsOnly() }
     }
     maven { url 'https://build.shibboleth.net/nexus/content/repositories/releases/' }
-    maven { url 'http://repo.spring.io/milestone' }
+    maven { url 'https://repo.spring.io/milestone' }
 }
 
 apply plugin: "io.spring.dependency-management"
@@ -434,9 +434,7 @@ cas.standard.js.file=/themes/${theme}/js/cas.js
 springBoot {
     buildInfo()
 
-    mainClassName = "org.apereo.cas.web.CasWebApplication"
-
-
+    mainClass = "org.apereo.cas.web.CasWebApplication"
 
 
 }
