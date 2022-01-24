@@ -6,3 +6,6 @@ test
 **/*.md
 cas-server-documentation/
 target
+build/overlays/**
+build/tmp/**
+build/resources/**
