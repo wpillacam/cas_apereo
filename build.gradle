@@ -41,7 +41,6 @@ springBoot {
 bootWar {
     archiveName "cas.war"
     baseName "cas"
-    excludeDevtools = false
 
     entryCompression = ZipEntryCompression.STORED
     /*
