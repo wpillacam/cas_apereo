@@ -3,7 +3,7 @@
   "serviceId" : ".*",
   "name" : "Everything",
   "id" : 1,
-  "description" : "Everything is accepted by this definition.",
+  "description" : "This application definition represents everything that is accepted by CAS!",
   "evaluationOrder" : 1,
   "attributeReleasePolicy" : {
     "@class" : "org.apereo.cas.services.ReturnAllAttributeReleasePolicy"

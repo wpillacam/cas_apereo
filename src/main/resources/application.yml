@@ -12,7 +12,8 @@ cas:
                     last-name: CAS
                     email: info@apereo.org
     events:
-        track-configuration-modifications: false
+        core:
+            track-configuration-modifications: false
     monitor:
         endpoints:
             endpoint:
@@ -25,7 +26,8 @@ cas:
             http:
                 enabled: false
     service-registry:
-        init-from-json: true
+        core:
+            init-from-json: true
 eureka:
     client:
         enabled: true
