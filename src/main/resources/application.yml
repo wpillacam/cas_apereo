@@ -1,5 +1,7 @@
 cas:
     authn:
+        accept:
+            users: casuser::Mellon,casadmin::Mellon
         attribute-repository:
             stub:
                 attributes:
