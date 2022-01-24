@@ -69,6 +69,17 @@ bootWar {
     }
 }
 
+war {
+    enabled = false
+}
+
+task purge(type: Delete) {
+  delete 'build/overlays', 'build/tmp', 'build/resources'
+  followSymlinks = true
+}
+
+build.finalizedBy purge
+
 dependencies {
     implementation group: "org.apereo.cas", name: "cas-server-webapp${project.appServer}", version: "${project.'cas.version'}", changing: true
     // implementation group: "org.apereo.cas", name: "cas-server-support-bootadmin-client", version: "${project.'cas.version'}", changing: true
