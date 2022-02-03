@@ -1,7 +1,6 @@
 buildscript {
     repositories {
         mavenLocal()
-        jcenter()
         maven { 
             url "https://plugins.gradle.org/m2/" 
             mavenContent { releasesOnly() }
@@ -16,7 +15,6 @@ buildscript {
 repositories {
     mavenLocal()
     mavenCentral()
-    jcenter()
     maven { url "https://build.shibboleth.net/nexus/content/repositories/releases/" }
 }
 
@@ -35,7 +33,7 @@ dependencies {
 
 springBoot {
     buildInfo()
-    mainClassName = "org.apereo.cas.web.CasWebApplication"
+    mainClass = "org.apereo.cas.web.CasWebApplication"
 }
 
 bootWar {
