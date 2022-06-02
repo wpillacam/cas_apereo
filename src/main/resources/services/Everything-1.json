@@ -1,6 +1,6 @@
 {
   "@class" : "org.apereo.cas.services.RegexRegisteredService",
-  "serviceId" : ".*",
+  "serviceId" : "^https://.*.herokuapp.com.*",
   "name" : "Everything",
   "id" : 1,
   "description" : "This application definition represents everything that is accepted by CAS!",
