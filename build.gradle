@@ -246,7 +246,7 @@ springBoot {
     buildInfo()
 
 
-    mainClassName = "org.apereo.cas.CasSpringBootAdminServerWebApplication"
+    mainClass = "org.apereo.cas.CasSpringBootAdminServerWebApplication"
 
 
 
