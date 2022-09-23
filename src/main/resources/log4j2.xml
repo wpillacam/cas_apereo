@@ -6,7 +6,7 @@
         </Console>
     </Appenders>
     <Loggers>
-        <AsyncLogger name="org.apereo.cas" level="debug" additivity="false">
+        <AsyncLogger name="org.apereo.cas" level="info" additivity="false">
             <AppenderRef ref="console"/>
         </AsyncLogger>
         <AsyncLogger name="com.netflix.client.config" level="warn" additivity="false">
@@ -18,7 +18,10 @@
         <AsyncLogger name="org.springframework.cloud" level="warn" additivity="false">
             <AppenderRef ref="console"/>
         </AsyncLogger>
-        <AsyncLogger name="org.springframework.boot" level="debug" additivity="false">
+        <AsyncLogger name="org.springframework.security" level="warn" additivity="false">
+            <AppenderRef ref="console"/>
+        </AsyncLogger>
+        <AsyncLogger name="org.springframework.boot" level="info" additivity="false">
             <AppenderRef ref="console"/>
         </AsyncLogger>
         <AsyncLogger name="org.springframework.boot.admin" level="info" additivity="false">
