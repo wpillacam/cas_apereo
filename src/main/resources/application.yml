@@ -24,7 +24,7 @@ cas:
         prefix: https://casserver.herokuapp.com/cas
         tomcat:
             http:
-                enabled: false
+                - enabled: false
     service-registry:
         core:
             init-from-json: true
