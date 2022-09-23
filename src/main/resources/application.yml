@@ -49,6 +49,7 @@ server:
     port: ${PORT:8221}
     ssl:
         enabled: false
+        key-store: 
 spring:
     boot:
         admin:
