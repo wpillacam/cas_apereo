@@ -16,6 +16,10 @@ repositories {
     mavenLocal()
     mavenCentral()
     maven { url "https://build.shibboleth.net/nexus/content/repositories/releases/" }
+    maven {
+        url "https://oss.sonatype.org/content/repositories/snapshots"
+        mavenContent { snapshotsOnly() }
+    }
 }
 
 apply plugin: "io.freefair.war-overlay"
