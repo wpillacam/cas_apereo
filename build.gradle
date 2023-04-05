@@ -88,6 +88,7 @@ dependencies {
     // implementation group: "org.apereo.cas", name: "cas-server-support-sleuth", version: "${project.'cas.version'}", changing: true
     // implementation group: "org.apereo.cas", name: "cas-server-support-discovery-profile", version: "${project.'cas.version'}", changing: true
     implementation group: "org.apereo.cas", name: "cas-server-support-eureka-client", version: "${project.'cas.version'}", changing: true
+    implementation group: "org.apereo.cas", name: "cas-server-support-rest", version: "${project.'cas.version'}", changing: true
     // implementation group: "org.apereo.cas", name: "cas-server-support-reports", version: "${project.'cas.version'}", changing: true
     // implementation group: "org.apereo.cas", name: "cas-server-support-metrics", version: "${project.'cas.version'}", changing: true
 }
