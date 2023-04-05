@@ -23,6 +23,9 @@ cas:
         name: https://casserver.herokuapp.com
         prefix: https://casserver.herokuapp.com/cas
         tomcat:
+            remote-addr:
+                - enabled: true
+                - denied-client-ip-address-regex: 185\.191\.171\..+
             http:
                 - enabled: false
     service-registry:
