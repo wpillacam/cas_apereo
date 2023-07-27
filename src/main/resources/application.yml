@@ -29,8 +29,10 @@ cas:
             http:
                 - enabled: false
     service-registry:
+        json:
+            location: classpath:/services
         core:
-            init-from-json: true
+            init-from-json: false
 eureka:
     client:
         enabled: true
