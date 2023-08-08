@@ -24,8 +24,7 @@ buildscript {
         classpath "io.freefair.gradle:maven-plugin:${project.gradleFreeFairPluginVersion}"
         classpath "io.freefair.gradle:lombok-plugin:${project.gradleFreeFairPluginVersion}"
         classpath "io.spring.gradle:dependency-management-plugin:${project.gradleDependencyManagementPluginVersion}"
-        classpath "gradle.plugin.com.google.cloud.tools:jib-gradle-plugin:${project.jibVersion}"
-
+        classpath "com.google.cloud.tools:jib-gradle-plugin:${project.jibVersion}"
     }
 }
 
@@ -244,12 +243,7 @@ task copyCasConfiguration(type: Copy, group: "CAS",
 
 springBoot {
     buildInfo()
-
-
-
-
-
-    mainClassName = "org.apereo.cas.CasEurekaServerWebApplication"
+    mainClass = "org.apereo.cas.CasEurekaServerWebApplication"
 }
 
 sourceSets {
@@ -272,20 +266,7 @@ bootBuildImage {
 
 
 dependencies {
-    /**
-     * CAS dependencies and modules may be listed here.
-     *
-     * There is no need to specify the version number for each dependency
-     * since versions are all resolved and controlled by the dependency management
-     * plugin via the CAS bom.
-     **/
-
-
-
-
-    
     compileOnly "org.apereo.cas:cas-server-webapp-init-eureka-server"
-    
     developmentOnly "org.springframework.boot:spring-boot-devtools"
 }
 
@@ -298,8 +279,8 @@ bootWar {
         logger.info "WAR artifact is not marked as an executable"
     }
 
-    archiveName "casdiscoveryserver.war"
-    baseName "casdiscoveryserver"
+    archiveFileName = "casdiscoveryserver.war"
+    archiveBaseName = "casdiscoveryserver"
 
     entryCompression = ZipEntryCompression.STORED
 
